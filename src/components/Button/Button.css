@@ -1,0 +1,30 @@
+.button-cont {
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+    border: 2px solid darkgrey;
+    text-align: center;
+    margin: 3px;
+    transition: 0.1s;
+    user-select: none;
+    box-sizing: border-box;
+    float: left;
+    font-family: sans-serif;
+}
+
+.button-cont:hover {
+    cursor: pointer;
+    border-color: lightgray;
+}
+
+.button-cont:active {
+    background-color: darkgrey;
+}
+
+.b-3 {
+    width: 23%;
+}
+
+.b-2 {
+    width: 47.5%;
+}

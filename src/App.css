@@ -1,0 +1,41 @@
+body {
+    background-image: url('./img/bgtexture.jpg');
+    background-repeat: repeat;
+    margin: 0px;
+}
+
+#root {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#calc-body {
+    display: inline-block;
+    width: 375px;
+    height: 375px;
+    background-color: grey;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    padding: 15px;
+}
+
+/* Display style */
+#display {
+    display: block;
+    padding: 15px 5px;
+    background-color: wheat;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin: 5px 9px 5px 3px;
+}
+
+#txt {
+    margin: 0px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+}
