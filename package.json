@@ -2,6 +2,7 @@
   "name": "calculator",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://rossoskull.me/Calculator",
   "dependencies": {
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
