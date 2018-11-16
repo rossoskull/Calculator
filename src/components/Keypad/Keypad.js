@@ -2,7 +2,6 @@ import React from 'react'
 import Button from '../Button/Button'
 
 const Keypad = ({handleInput}) => {
-    console.log(handleInput)
     return(
         <div id='keypad'>
         <div className='keypad-row'>
