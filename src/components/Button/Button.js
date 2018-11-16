@@ -1,10 +1,10 @@
 import React from 'react'
 import './Button.css'
 
-const Button = ({face, size}) => {
+const Button = ({face, size, handleInput}) => {
     const classes = ['button-cont', size]
     return(
-        <div className={classes.join(' ')}>
+        <div onClick={() => {handleInput(face)}} className={classes.join(' ')}>
             {face}
         </div>
     )

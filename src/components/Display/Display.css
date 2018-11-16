@@ -1,0 +1,21 @@
+/* Display style */
+#display {
+    display: block;
+    padding: 15px 7px;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin: 5px 9px 5px 3px;
+    text-align: right;
+    overflow:hidden;
+    white-space: nowrap;
+}
+
+#txt {
+    float: right;
+    margin: 0px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
+    user-select: none;
+}
