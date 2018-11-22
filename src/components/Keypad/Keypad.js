@@ -4,8 +4,13 @@ import Button from '../Button/Button'
 const Keypad = ({handleInput}) => {
     return(
         <div id='keypad'>
-        <div className='keypad-row'>
-                <Button face='AC' size='b-3' handleInput={handleInput}/>
+            <div className='keypad-row'>
+                <Button face='(' size='b-3' handleInput={handleInput}/>
+                <Button face=')' size='b-3' handleInput={handleInput} />
+                <Button face='AC' size='b-2' handleInput={handleInput}/>
+            </div>
+            <div className='keypad-row'>
+                <Button face='^' size='b-3' handleInput={handleInput} />
                 <Button face='<' size='b-3' handleInput={handleInput} />
                 <Button face='/' size='b-3' handleInput={handleInput} />
                 <Button face='*' size='b-3' handleInput={handleInput} />

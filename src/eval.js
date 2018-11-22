@@ -3,7 +3,8 @@ const ops = {
 	'*': (a, b) => { return a*b },
 	'-': (a, b) => { return b-a },
 	'/': (a, b) => { return b/a },
-	'%': (a, b) => { return b%a }
+	'%': (a, b) => { return b%a },
+	'^': (a, b) => { return Math.pow(b, a) }
 }
 
 let current = ''

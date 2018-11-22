@@ -34,7 +34,7 @@ class App extends Component {
   render() {
     return (
         <div id='calc-body'>
-          <Display txt={this.state.txt} />
+          <Display txt={this.state.txt}/>
           <Keypad handleInput={this.handleInput}/>
         </div>
     );
