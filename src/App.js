@@ -18,8 +18,10 @@ class App extends Component {
       if ( txt.length === 0 ) txt = '0'
       this.setState({txt: txt})
     } else if ( c==='=') {
-      const value = fun(this.state.txt)
-      this.setState({txt: value})
+      if ( this.state.txt !== '0' ) {
+        const value = fun(this.state.txt)
+        this.setState({txt: value})
+      }      
     } else {
       let txt = this.state.txt
       if ( txt === '0' || txt === 'Error' ) {
@@ -31,9 +33,31 @@ class App extends Component {
     }
   }
 
+  handleKeyPress = e => {
+    const keyChart = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '(', ')', '*', '%', '^', '+', '-', '/']
+
+    const { key } = e
+    console.log(key)
+    if ( key === 'Escape' ) {
+      this.handleInput('AC')
+    } else if ( key === 'Enter' ) {
+      this.handleInput('=')
+    } else if ( key === 'Backspace' ) {
+      this.handleInput('<')
+    } else if ( keyChart.indexOf(key) + 1 ) {
+      this.handleInput(key)
+    } else {
+      console.log('Invalid key.')
+    }
+  }
+
+  componentDidMount() {
+    document.getElementById('calc-body').focus()
+  }
+
   render() {
     return (
-        <div id='calc-body'>
+        <div id='calc-body' onKeyDown={this.handleKeyPress} tabIndex="-1">
           <Display txt={this.state.txt}/>
           <Keypad handleInput={this.handleInput}/>
         </div>
